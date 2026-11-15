@@ -1,0 +1,43 @@
+### Result
+Found 3 matches for "Writing tests":
+
+- generic [ref=f5e2]:
+  - generic [ref=f5e36]:
+    - complementary [ref=f5e37]:
+      - navigation "Docs sidebar" [ref=f5e40]:
+        - list [ref=f5e41]:
+          - listitem [ref=f5e42]:
+            - list [ref=f5e46]:
+              - listitem [ref=f5e47]:
+                - link "Installation" [ref=f5e48] [cursor=pointer]:
+                  - /url: /docs/intro
+              - listitem [ref=f5e50]:
+                - link "Writing tests" [ref=f5e51] [cursor=pointer]:
+                  - /url: /docs/writing-tests
+              - listitem [ref=f5e53]:
+                - link "Generating tests" [ref=f5e54] [cursor=pointer]:
+
+----
+
+- generic [ref=f5e2]:
+  - generic [ref=f5e36]:
+    - main [ref=f5e263]:
+      - generic [ref=f5e265]:
+        - generic [ref=f5e267]:
+          - article [ref=f5e268]:
+            ...
+            - generic [ref=f5e279]:
+              ...
+              - list [ref=f5e500]:
+                ...
+                - listitem [ref=f5e507]:
+                  - link "View a trace of your tests" [ref=f5e508] [cursor=pointer]:
+                    - /url: /docs/trace-viewer-intro
+          - navigation "Docs pages" [ref=f5e509]:
+            - link "Next Writing tests »" [ref=f5e510] [cursor=pointer]:
+              - /url: /docs/writing-tests
+              - generic [ref=f5e511]: Next
+              - generic [ref=f5e512]: Writing tests »
+        - list [ref=f5e515]:
+          - listitem [ref=f5e516]:
+            - link "Introduction" [ref=f5e517] [cursor=pointer]:

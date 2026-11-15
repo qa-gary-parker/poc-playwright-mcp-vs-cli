@@ -1,0 +1,44 @@
+### Ran Playwright code
+```js
+await page.getByRole('button', { name: ' Login' }).click();
+```
+### Page
+- Page URL: https://the-internet.herokuapp.com/secure
+- Page Title: The Internet
+- Console: 6 errors, 0 warnings
+### Snapshot
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - 'link "The Internet: home" [ref=e3] [cursor=pointer]':
+    - /url: /
+    - text: The Internet powered by Sauce Labs
+  - region "Messages" [ref=e5]:
+    - generic [ref=e6]:
+      - text:  You logged into a secure area!
+      - link "Close" [ref=e7] [cursor=pointer]:
+        - /url: "#"
+        - text: ×
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - heading "Secure Area" [level=2] [ref=e11]: Secure Area
+      - heading "Welcome to the Secure Area. When you are done click logout below." [level=4] [ref=e12]
+      - paragraph [ref=e13]: Logged in as tomsmith
+      - link "Logout" [ref=e14] [cursor=pointer]:
+        - /url: /logout
+  - contentinfo [ref=e15]:
+    - generic [ref=e17]:
+      - text: Powered by
+      - link "Elemental Selenium" [ref=e18] [cursor=pointer]:
+        - /url: https://elementalselenium.com/
+      - text: and
+      - link "Sauce Labs" [ref=e19] [cursor=pointer]:
+        - /url: https://saucelabs.com/
+```
+### Events
+- New console entries: results/raw/MCP 0.0.68/files/console-2026-11-15T11-09-31-982Z.log#L3-L6
+- [ERROR] Failed to load resource: net::ERR_NAME_NOT...932&wxhr=true&t=1794740975401&f=298349752,318188263:0
+- [ERROR] Failed to load resource: net::ERR_NAME_NOT...932&wxhr=true&t=1794740973110&f=298349752,318188263:0
+- [ERROR] Failed to load resource: net::ERR_NAME_NOT...932&wxhr=true&t=1794740975401&f=298349752,318188263:0
+- [ERROR] Failed to load resource: net::ERR_NAME_NOT...932&wxhr=true&t=1794740975784&f=298349752,318188263:0

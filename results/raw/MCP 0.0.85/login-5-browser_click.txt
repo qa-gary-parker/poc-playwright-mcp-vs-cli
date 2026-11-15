@@ -1,0 +1,12 @@
+### Ran Playwright code
+```js
+await page.getByRole('button', { name: ' Login' }).click();
+```
+### Page
+- Page URL: https://the-internet.herokuapp.com/secure
+- Page Title: The Internet
+- Console: 3 errors, 0 warnings
+### Snapshot
+- [Snapshot](results/raw/MCP 0.0.85/files/page-2026-11-15T11-09-42-902Z.yml)
+### Events
+- New console entries: results/raw/MCP 0.0.85/files/console-2026-11-15T11-09-40-590Z.log#L4-L8

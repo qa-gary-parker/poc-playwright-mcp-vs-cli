@@ -1,0 +1,12 @@
+### Ran Playwright code
+```js
+await page.getByRole('button', { name: ' Login' }).click();
+```
+### Page
+- Page URL: https://the-internet.herokuapp.com/secure
+- Page Title: The Internet
+- Console: 3 errors, 0 warnings
+### Snapshot
+- [Snapshot](.playwright-cli/page-2026-11-15T11-09-50-570Z.yml)
+### Events
+- New console entries: .playwright-cli/console-2026-11-15T11-09-47-609Z.log#L5-L8

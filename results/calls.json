@@ -1,0 +1,368 @@
+{
+  "fixed": [
+    {
+      "arm": "MCP 0.0.68",
+      "what": "22 tool definitions (tools/list JSON)",
+      "chars": 14080,
+      "tokens": 3071
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "what": "25 tool definitions (tools/list JSON)",
+      "chars": 21177,
+      "tokens": 4568
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "what": "SKILL.md shipped with the CLI",
+      "chars": 15696,
+      "tokens": 3760
+    }
+  ],
+  "calls": [
+    {
+      "arm": "MCP 0.0.68",
+      "task": "login",
+      "n": 1,
+      "call": "browser_navigate",
+      "chars": 2201,
+      "tokens": 649
+    },
+    {
+      "arm": "MCP 0.0.68",
+      "task": "login",
+      "n": 2,
+      "call": "browser_type",
+      "chars": 438,
+      "tokens": 133
+    },
+    {
+      "arm": "MCP 0.0.68",
+      "task": "login",
+      "n": 3,
+      "call": "browser_type",
+      "chars": 117,
+      "tokens": 31
+    },
+    {
+      "arm": "MCP 0.0.68",
+      "task": "login",
+      "n": 4,
+      "call": "browser_click",
+      "chars": 1831,
+      "tokens": 604
+    },
+    {
+      "arm": "MCP 0.0.68",
+      "task": "large-page",
+      "n": 1,
+      "call": "browser_navigate",
+      "chars": 148502,
+      "tokens": 48214
+    },
+    {
+      "arm": "MCP 0.0.68",
+      "task": "docs",
+      "n": 1,
+      "call": "browser_navigate",
+      "chars": 37498,
+      "tokens": 9022
+    },
+    {
+      "arm": "MCP 0.0.68",
+      "task": "docs",
+      "n": 2,
+      "call": "browser_click",
+      "chars": 25527,
+      "tokens": 6175
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "login",
+      "n": 1,
+      "call": "browser_navigate",
+      "chars": 411,
+      "tokens": 138
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "login",
+      "n": 2,
+      "call": "browser_snapshot",
+      "chars": 1452,
+      "tokens": 425
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "login",
+      "n": 3,
+      "call": "browser_type",
+      "chars": 105,
+      "tokens": 30
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "login",
+      "n": 4,
+      "call": "browser_type",
+      "chars": 117,
+      "tokens": 31
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "login",
+      "n": 5,
+      "call": "browser_click",
+      "chars": 412,
+      "tokens": 145
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "login",
+      "n": 6,
+      "call": "browser_snapshot",
+      "chars": 1213,
+      "tokens": 399
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "large-page",
+      "n": 1,
+      "call": "browser_navigate",
+      "chars": 305,
+      "tokens": 97
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "large-page",
+      "n": 2,
+      "call": "browser_snapshot",
+      "chars": 139098,
+      "tokens": 43348
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "docs",
+      "n": 1,
+      "call": "browser_navigate",
+      "chars": 272,
+      "tokens": 86
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "docs",
+      "n": 2,
+      "call": "browser_snapshot",
+      "chars": 32549,
+      "tokens": 8586
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "docs",
+      "n": 3,
+      "call": "browser_click",
+      "chars": 299,
+      "tokens": 95
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "docs",
+      "n": 4,
+      "call": "browser_snapshot",
+      "chars": 40339,
+      "tokens": 10411
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "large-page-find",
+      "n": 1,
+      "call": "browser_navigate",
+      "chars": 411,
+      "tokens": 140
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "large-page-find",
+      "n": 2,
+      "call": "browser_find",
+      "chars": 617,
+      "tokens": 200
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "docs-find",
+      "n": 1,
+      "call": "browser_navigate",
+      "chars": 272,
+      "tokens": 86
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "docs-find",
+      "n": 2,
+      "call": "browser_find",
+      "chars": 1546,
+      "tokens": 440
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "docs-find",
+      "n": 3,
+      "call": "browser_click",
+      "chars": 299,
+      "tokens": 95
+    },
+    {
+      "arm": "MCP 0.0.85",
+      "task": "docs-find",
+      "n": 4,
+      "call": "browser_find",
+      "chars": 1403,
+      "tokens": 399
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "login",
+      "n": 1,
+      "call": "open https://the-internet.herokuapp.com/login",
+      "chars": 434,
+      "tokens": 137
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "login",
+      "n": 2,
+      "call": "snapshot",
+      "chars": 1543,
+      "tokens": 461
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "login",
+      "n": 3,
+      "call": "fill e17 tomsmith",
+      "chars": 106,
+      "tokens": 31
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "login",
+      "n": 4,
+      "call": "fill e21 SuperSecretPassword!",
+      "chars": 118,
+      "tokens": 32
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "login",
+      "n": 5,
+      "call": "click e22",
+      "chars": 387,
+      "tokens": 132
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "login",
+      "n": 6,
+      "call": "snapshot",
+      "chars": 1214,
+      "tokens": 400
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "large-page",
+      "n": 1,
+      "call": "goto https://the-internet.herokuapp.com/large",
+      "chars": 386,
+      "tokens": 127
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "large-page",
+      "n": 2,
+      "call": "snapshot",
+      "chars": 138993,
+      "tokens": 43305
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "docs",
+      "n": 1,
+      "call": "goto https://playwright.dev/docs/intro",
+      "chars": 260,
+      "tokens": 79
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "docs",
+      "n": 2,
+      "call": "snapshot",
+      "chars": 32550,
+      "tokens": 8587
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "docs",
+      "n": 3,
+      "call": "click f3e458",
+      "chars": 287,
+      "tokens": 88
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "docs",
+      "n": 4,
+      "call": "snapshot",
+      "chars": 40340,
+      "tokens": 10412
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "large-page-find",
+      "n": 1,
+      "call": "goto https://the-internet.herokuapp.com/large",
+      "chars": 386,
+      "tokens": 127
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "large-page-find",
+      "n": 2,
+      "call": "find 50.50",
+      "chars": 618,
+      "tokens": 201
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "docs-find",
+      "n": 1,
+      "call": "goto https://playwright.dev/docs/intro",
+      "chars": 260,
+      "tokens": 79
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "docs-find",
+      "n": 2,
+      "call": "find Writing tests",
+      "chars": 1547,
+      "tokens": 440
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "docs-find",
+      "n": 3,
+      "call": "click f5e510",
+      "chars": 287,
+      "tokens": 88
+    },
+    {
+      "arm": "CLI 0.1.24",
+      "task": "docs-find",
+      "n": 4,
+      "call": "find Writing tests",
+      "chars": 1404,
+      "tokens": 399
+    }
+  ]
+}

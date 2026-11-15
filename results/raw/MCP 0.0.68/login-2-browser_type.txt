@@ -1,0 +1,11 @@
+### Ran Playwright code
+```js
+await page.getByRole('textbox', { name: 'Username' }).fill('tomsmith');
+```
+### Page
+- Page URL: https://the-internet.herokuapp.com/login
+- Page Title: The Internet
+- Console: 2 errors, 0 warnings
+### Events
+- New console entries: results/raw/MCP 0.0.68/files/console-2026-11-15T11-09-31-982Z.log#L2
+- [ERROR] Failed to load resource: the server respon...() @ https://the-internet.herokuapp.com/favicon.ico:0

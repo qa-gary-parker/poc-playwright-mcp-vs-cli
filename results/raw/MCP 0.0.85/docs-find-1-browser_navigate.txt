@@ -1,0 +1,9 @@
+### Ran Playwright code
+```js
+await page.goto('https://playwright.dev/docs/intro');
+```
+### Page
+- Page URL: https://playwright.dev/docs/intro
+- Page Title: Installation | Playwright
+### Snapshot
+- [Snapshot](results/raw/MCP 0.0.85/files/page-2026-11-15T11-09-45-756Z.yml)

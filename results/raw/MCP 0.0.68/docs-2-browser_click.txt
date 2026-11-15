@@ -1,0 +1,454 @@
+### Ran Playwright code
+```js
+await page.getByRole('link', { name: 'Next Writing tests »' }).click();
+```
+### Page
+- Page URL: https://playwright.dev/docs/writing-tests
+- Page Title: Writing tests | Playwright
+### Snapshot
+```yaml
+- <changed> main [ref=e263]:
+  - generic [ref=e597]:
+    - generic [ref=e599]:
+      - article [ref=e600]:
+        - navigation "Breadcrumbs" [ref=e601]:
+          - list [ref=e602]:
+            - listitem [ref=e603]:
+              - link "Home page" [ref=e604] [cursor=pointer]:
+                - /url: /
+                - img [ref=e605]
+            - listitem [ref=e607]:
+              - generic [ref=e608]: Getting Started
+            - listitem [ref=e609]:
+              - generic [ref=e610]: Writing tests
+        - generic [ref=e611]:
+          - heading "Writing tests" [level=1] [ref=e613]
+          - heading "IntroductionDirect link to Introduction" [level=2] [ref=e614]:
+            - text: Introduction
+            - link "Direct link to Introduction" [ref=e615] [cursor=pointer]:
+              - /url: "#introduction"
+              - text: "#"
+          - paragraph [ref=e616]:
+            - text: "Playwright tests are simple: they"
+            - strong [ref=e617]: perform actions
+            - text: and
+            - strong [ref=e618]: assert the state
+            - text: against expectations.
+          - paragraph [ref=e619]:
+            - text: Playwright automatically waits for
+            - link "actionability" [ref=e620] [cursor=pointer]:
+              - /url: /docs/actionability
+            - text: checks to pass before performing each action. You don't need to add manual waits or deal with race conditions. Playwright assertions are designed to describe expectations that will eventually be met, eliminating flaky timeouts and racy checks.
+          - paragraph [ref=e621]:
+            - strong [ref=e622]: You will learn
+          - list [ref=e623]:
+            - listitem [ref=e624]:
+              - link "How to write the first test" [ref=e625] [cursor=pointer]:
+                - /url: /docs/writing-tests#first-test
+            - listitem [ref=e626]:
+              - link "How to perform actions" [ref=e627] [cursor=pointer]:
+                - /url: /docs/writing-tests#actions
+            - listitem [ref=e628]:
+              - link "How to use assertions" [ref=e629] [cursor=pointer]:
+                - /url: /docs/writing-tests#assertions
+            - listitem [ref=e630]:
+              - link "How tests run in isolation" [ref=e631] [cursor=pointer]:
+                - /url: /docs/writing-tests#test-isolation
+            - listitem [ref=e632]:
+              - link "How to use test hooks" [ref=e633] [cursor=pointer]:
+                - /url: /docs/writing-tests#using-test-hooks
+          - heading "First testDirect link to First test" [level=2] [ref=e634]:
+            - text: First test
+            - link "Direct link to First test" [ref=e635] [cursor=pointer]:
+              - /url: "#first-test"
+              - text: "#"
+          - paragraph [ref=e636]: Take a look at the following example to see how to write a test.
+          - generic [ref=e637]:
+            - generic [ref=e638]: tests/example.spec.ts
+            - generic [ref=e639]:
+              - code [ref=e641]:
+                - generic [ref=e642]: "import { test, expect } from '@playwright/test';"
+                - generic [ref=e644]: "test('has title', async ({ page }) => {"
+                - generic [ref=e645]: await page.goto('https://playwright.dev/');
+                - generic [ref=e647]: // Expect a title "to contain" a substring.
+                - generic [ref=e648]: await expect(page).toHaveTitle(/Playwright/);
+                - generic [ref=e649]: "});"
+                - generic [ref=e651]: "test('get started link', async ({ page }) => {"
+                - generic [ref=e652]: await page.goto('https://playwright.dev/');
+                - generic [ref=e654]: // Click the get started link.
+                - generic [ref=e655]: "await page.getByRole('link', { name: 'Get started' }).click();"
+                - generic [ref=e657]: // Expects page to have a heading with the name of Installation.
+                - generic [ref=e658]: "await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();"
+                - generic [ref=e659]: "});"
+              - generic [ref=e660]:
+                - button "Toggle word wrap" [ref=e661] [cursor=pointer]:
+                  - img [ref=e662]
+                - button "Copy code to clipboard" [ref=e664] [cursor=pointer]:
+                  - generic [ref=e665]:
+                    - img [ref=e666]
+                    - img [ref=e668]
+          - generic [ref=e670]:
+            - generic [ref=e671]:
+              - img [ref=e673]
+              - text: note
+            - paragraph [ref=e676]:
+              - text: Add
+              - code [ref=e677]: // @ts-check
+              - text: at the start of each test file when using JavaScript in VS Code to get automatic type checking.
+          - heading "ActionsDirect link to Actions" [level=2] [ref=e678]:
+            - text: Actions
+            - link "Direct link to Actions" [ref=e679] [cursor=pointer]:
+              - /url: "#actions"
+              - text: "#"
+          - heading "NavigationDirect link to Navigation" [level=3] [ref=e680]:
+            - text: Navigation
+            - link "Direct link to Navigation" [ref=e681] [cursor=pointer]:
+              - /url: "#navigation"
+              - text: "#"
+          - paragraph [ref=e682]: Most tests start by navigating to a URL. After that, the test interacts with page elements.
+          - generic [ref=e684]:
+            - code [ref=e686]:
+              - generic [ref=e687]: await page.goto('https://playwright.dev/');
+            - button "Copy code to clipboard" [ref=e689] [cursor=pointer]:
+              - generic [ref=e690]:
+                - img [ref=e691]
+                - img [ref=e693]
+          - paragraph [ref=e695]:
+            - text: Playwright waits for the page to reach the load state before continuing. Learn more about
+            - link "page.goto()" [ref=e696] [cursor=pointer]:
+              - /url: /docs/api/class-page#page-goto
+            - text: options.
+          - heading "InteractionsDirect link to Interactions" [level=3] [ref=e697]:
+            - text: Interactions
+            - link "Direct link to Interactions" [ref=e698] [cursor=pointer]:
+              - /url: "#interactions"
+              - text: "#"
+          - paragraph [ref=e699]:
+            - text: Performing actions starts with locating elements. Playwright uses
+            - link "Locators API" [ref=e700] [cursor=pointer]:
+              - /url: /docs/locators
+            - text: for that. Locators represent a way to find element(s) on the page at any moment. Learn more about the
+            - link "different types" [ref=e701] [cursor=pointer]:
+              - /url: /docs/locators
+            - text: of locators available.
+          - paragraph [ref=e702]:
+            - text: Playwright waits for the element to be
+            - link "actionable" [ref=e703] [cursor=pointer]:
+              - /url: /docs/actionability
+            - text: before performing the action, so you don't need to wait for it to become available.
+          - generic [ref=e705]:
+            - code [ref=e707]:
+              - generic [ref=e708]: // Create a locator.
+              - generic [ref=e709]: "const getStarted = page.getByRole('link', { name: 'Get started' });"
+              - generic [ref=e711]: // Click it.
+              - generic [ref=e712]: await getStarted.click();
+            - button "Copy code to clipboard" [ref=e714] [cursor=pointer]:
+              - generic [ref=e715]:
+                - img [ref=e716]
+                - img [ref=e718]
+          - paragraph [ref=e720]: "In most cases, it'll be written in one line:"
+          - generic [ref=e722]:
+            - code [ref=e724]:
+              - generic [ref=e725]: "await page.getByRole('link', { name: 'Get started' }).click();"
+            - button "Copy code to clipboard" [ref=e727] [cursor=pointer]:
+              - generic [ref=e728]:
+                - img [ref=e729]
+                - img [ref=e731]
+          - heading "Basic actionsDirect link to Basic actions" [level=3] [ref=e733]:
+            - text: Basic actions
+            - link "Direct link to Basic actions" [ref=e734] [cursor=pointer]:
+              - /url: "#basic-actions"
+              - text: "#"
+          - paragraph [ref=e735]:
+            - text: Here are the most popular Playwright actions. For the complete list, check the
+            - link "Locator API" [ref=e736] [cursor=pointer]:
+              - /url: /docs/api/class-locator
+            - text: section.
+          - table [ref=e737]:
+            - rowgroup [ref=e738]:
+              - row "Action Description" [ref=e739]:
+                - columnheader "Action" [ref=e740]
+                - columnheader "Description" [ref=e741]
+            - rowgroup [ref=e742]:
+              - row "locator.check() Check the input checkbox" [ref=e743]:
+                - cell "locator.check()" [ref=e744]:
+                  - link "locator.check()" [ref=e745] [cursor=pointer]:
+                    - /url: /docs/api/class-locator#locator-check
+                - cell "Check the input checkbox" [ref=e746]
+              - row "locator.click() Click the element" [ref=e747]:
+                - cell "locator.click()" [ref=e748]:
+                  - link "locator.click()" [ref=e749] [cursor=pointer]:
+                    - /url: /docs/api/class-locator#locator-click
+                - cell "Click the element" [ref=e750]
+              - row "locator.uncheck() Uncheck the input checkbox" [ref=e751]:
+                - cell "locator.uncheck()" [ref=e752]:
+                  - link "locator.uncheck()" [ref=e753] [cursor=pointer]:
+                    - /url: /docs/api/class-locator#locator-uncheck
+                - cell "Uncheck the input checkbox" [ref=e754]
+              - row "locator.hover() Hover mouse over the element" [ref=e755]:
+                - cell "locator.hover()" [ref=e756]:
+                  - link "locator.hover()" [ref=e757] [cursor=pointer]:
+                    - /url: /docs/api/class-locator#locator-hover
+                - cell "Hover mouse over the element" [ref=e758]
+              - row "locator.fill() Fill the form field, input text" [ref=e759]:
+                - cell "locator.fill()" [ref=e760]:
+                  - link "locator.fill()" [ref=e761] [cursor=pointer]:
+                    - /url: /docs/api/class-locator#locator-fill
+                - cell "Fill the form field, input text" [ref=e762]
+              - row "locator.focus() Focus the element" [ref=e763]:
+                - cell "locator.focus()" [ref=e764]:
+                  - link "locator.focus()" [ref=e765] [cursor=pointer]:
+                    - /url: /docs/api/class-locator#locator-focus
+                - cell "Focus the element" [ref=e766]
+              - row "locator.press() Press single key" [ref=e767]:
+                - cell "locator.press()" [ref=e768]:
+                  - link "locator.press()" [ref=e769] [cursor=pointer]:
+                    - /url: /docs/api/class-locator#locator-press
+                - cell "Press single key" [ref=e770]
+              - row "locator.setInputFiles() Pick files to upload" [ref=e771]:
+                - cell "locator.setInputFiles()" [ref=e772]:
+                  - link "locator.setInputFiles()" [ref=e773] [cursor=pointer]:
+                    - /url: /docs/api/class-locator#locator-set-input-files
+                - cell "Pick files to upload" [ref=e774]
+              - row "locator.selectOption() Select option in the drop down" [ref=e775]:
+                - cell "locator.selectOption()" [ref=e776]:
+                  - link "locator.selectOption()" [ref=e777] [cursor=pointer]:
+                    - /url: /docs/api/class-locator#locator-select-option
+                - cell "Select option in the drop down" [ref=e778]
+          - heading "AssertionsDirect link to Assertions" [level=2] [ref=e779]:
+            - text: Assertions
+            - link "Direct link to Assertions" [ref=e780] [cursor=pointer]:
+              - /url: "#assertions"
+              - text: "#"
+          - paragraph [ref=e781]:
+            - text: Playwright includes
+            - link "test assertions" [ref=e782] [cursor=pointer]:
+              - /url: /docs/test-assertions
+            - text: in the form of
+            - code [ref=e783]: expect
+            - text: function. To make an assertion, call
+            - code [ref=e784]: expect(value)
+            - text: and choose a matcher that reflects the expectation.
+          - paragraph [ref=e785]: "Playwright includes async matchers that wait until the expected condition is met. Using these matchers makes tests non-flaky and resilient. For example, this code waits until the page gets the title containing \"Playwright\":"
+          - generic [ref=e787]:
+            - code [ref=e789]:
+              - generic [ref=e790]: await expect(page).toHaveTitle(/Playwright/);
+            - button "Copy code to clipboard" [ref=e792] [cursor=pointer]:
+              - generic [ref=e793]:
+                - img [ref=e794]
+                - img [ref=e796]
+          - paragraph [ref=e798]:
+            - text: Here are the most popular async assertions. For the complete list, see
+            - link "assertions guide" [ref=e799] [cursor=pointer]:
+              - /url: /docs/test-assertions
+            - text: ":"
+          - table [ref=e800]:
+            - rowgroup [ref=e801]:
+              - row "Assertion Description" [ref=e802]:
+                - columnheader "Assertion" [ref=e803]
+                - columnheader "Description" [ref=e804]
+            - rowgroup [ref=e805]:
+              - row "expect(locator).toBeChecked() Checkbox is checked" [ref=e806]:
+                - cell "expect(locator).toBeChecked()" [ref=e807]:
+                  - link "expect(locator).toBeChecked()" [ref=e808] [cursor=pointer]:
+                    - /url: /docs/api/class-locatorassertions#locator-assertions-to-be-checked
+                - cell "Checkbox is checked" [ref=e809]
+              - row "expect(locator).toBeEnabled() Control is enabled" [ref=e810]:
+                - cell "expect(locator).toBeEnabled()" [ref=e811]:
+                  - link "expect(locator).toBeEnabled()" [ref=e812] [cursor=pointer]:
+                    - /url: /docs/api/class-locatorassertions#locator-assertions-to-be-enabled
+                - cell "Control is enabled" [ref=e813]
+              - row "expect(locator).toBeVisible() Element is visible" [ref=e814]:
+                - cell "expect(locator).toBeVisible()" [ref=e815]:
+                  - link "expect(locator).toBeVisible()" [ref=e816] [cursor=pointer]:
+                    - /url: /docs/api/class-locatorassertions#locator-assertions-to-be-visible
+                - cell "Element is visible" [ref=e817]
+              - row "expect(locator).toContainText() Element contains text" [ref=e818]:
+                - cell "expect(locator).toContainText()" [ref=e819]:
+                  - link "expect(locator).toContainText()" [ref=e820] [cursor=pointer]:
+                    - /url: /docs/api/class-locatorassertions#locator-assertions-to-contain-text
+                - cell "Element contains text" [ref=e821]
+              - row "expect(locator).toHaveAttribute() Element has attribute" [ref=e822]:
+                - cell "expect(locator).toHaveAttribute()" [ref=e823]:
+                  - link "expect(locator).toHaveAttribute()" [ref=e824] [cursor=pointer]:
+                    - /url: /docs/api/class-locatorassertions#locator-assertions-to-have-attribute
+                - cell "Element has attribute" [ref=e825]
+              - row "expect(locator).toHaveCount() List of elements has given length" [ref=e826]:
+                - cell "expect(locator).toHaveCount()" [ref=e827]:
+                  - link "expect(locator).toHaveCount()" [ref=e828] [cursor=pointer]:
+                    - /url: /docs/api/class-locatorassertions#locator-assertions-to-have-count
+                - cell "List of elements has given length" [ref=e829]
+              - row "expect(locator).toHaveText() Element matches text" [ref=e830]:
+                - cell "expect(locator).toHaveText()" [ref=e831]:
+                  - link "expect(locator).toHaveText()" [ref=e832] [cursor=pointer]:
+                    - /url: /docs/api/class-locatorassertions#locator-assertions-to-have-text
+                - cell "Element matches text" [ref=e833]
+              - row "expect(locator).toHaveValue() Input element has value" [ref=e834]:
+                - cell "expect(locator).toHaveValue()" [ref=e835]:
+                  - link "expect(locator).toHaveValue()" [ref=e836] [cursor=pointer]:
+                    - /url: /docs/api/class-locatorassertions#locator-assertions-to-have-value
+                - cell "Input element has value" [ref=e837]
+              - row "expect(page).toHaveTitle() Page has title" [ref=e838]:
+                - cell "expect(page).toHaveTitle()" [ref=e839]:
+                  - link "expect(page).toHaveTitle()" [ref=e840] [cursor=pointer]:
+                    - /url: /docs/api/class-pageassertions#page-assertions-to-have-title
+                - cell "Page has title" [ref=e841]
+              - row "expect(page).toHaveURL() Page has URL" [ref=e842]:
+                - cell "expect(page).toHaveURL()" [ref=e843]:
+                  - link "expect(page).toHaveURL()" [ref=e844] [cursor=pointer]:
+                    - /url: /docs/api/class-pageassertions#page-assertions-to-have-url
+                - cell "Page has URL" [ref=e845]
+          - paragraph [ref=e846]:
+            - text: Playwright also includes generic matchers like
+            - code [ref=e847]: toEqual
+            - text: ","
+            - code [ref=e848]: toContain
+            - text: ","
+            - code [ref=e849]: toBeTruthy
+            - text: that can be used to assert any conditions. These assertions do not use the
+            - code [ref=e850]: await
+            - text: keyword as they perform immediate synchronous checks on already available values.
+          - generic [ref=e852]:
+            - code [ref=e854]:
+              - generic [ref=e855]: expect(success).toBeTruthy();
+            - button "Copy code to clipboard" [ref=e857] [cursor=pointer]:
+              - generic [ref=e858]:
+                - img [ref=e859]
+                - img [ref=e861]
+          - heading "Test IsolationDirect link to Test Isolation" [level=3] [ref=e863]:
+            - text: Test Isolation
+            - link "Direct link to Test Isolation" [ref=e864] [cursor=pointer]:
+              - /url: "#test-isolation"
+              - text: "#"
+          - paragraph [ref=e865]:
+            - text: Playwright Test is based on the concept of
+            - link "test fixtures" [ref=e866] [cursor=pointer]:
+              - /url: /docs/test-fixtures
+            - text: such as the
+            - link "built in page fixture" [ref=e867] [cursor=pointer]:
+              - /url: /docs/test-fixtures#built-in-fixtures
+            - text: ", which is passed into your test. Pages are"
+            - link "isolated between tests due to the Browser Context" [ref=e868] [cursor=pointer]:
+              - /url: /docs/browser-contexts
+            - text: ", which is equivalent to a brand new browser profile. Every test gets a fresh environment, even when multiple tests run in a single browser."
+          - generic [ref=e869]:
+            - generic [ref=e870]: tests/example.spec.ts
+            - generic [ref=e871]:
+              - code [ref=e873]:
+                - generic [ref=e874]: "import { test } from '@playwright/test';"
+                - generic [ref=e876]: "test('example test', async ({ page }) => {"
+                - generic [ref=e877]: // "page" belongs to an isolated BrowserContext, created for this specific test.
+                - generic [ref=e878]: "});"
+                - generic [ref=e880]: "test('another test', async ({ page }) => {"
+                - generic [ref=e881]: // "page" in this second test is completely isolated from the first test.
+                - generic [ref=e882]: "});"
+              - generic [ref=e883]:
+                - button "Toggle word wrap" [ref=e884] [cursor=pointer]:
+                  - img [ref=e885]
+                - button "Copy code to clipboard" [ref=e887] [cursor=pointer]:
+                  - generic [ref=e888]:
+                    - img [ref=e889]
+                    - img [ref=e891]
+          - heading "Using Test HooksDirect link to Using Test Hooks" [level=3] [ref=e893]:
+            - text: Using Test Hooks
+            - link "Direct link to Using Test Hooks" [ref=e894] [cursor=pointer]:
+              - /url: "#using-test-hooks"
+              - text: "#"
+          - paragraph [ref=e895]:
+            - text: You can use various
+            - link "test hooks" [ref=e896] [cursor=pointer]:
+              - /url: /docs/api/class-test
+            - text: such as
+            - code [ref=e897]: test.describe
+            - text: to declare a group of tests and
+            - code [ref=e898]: test.beforeEach
+            - text: and
+            - code [ref=e899]: test.afterEach
+            - text: which are executed before/after each test. Other hooks include the
+            - code [ref=e900]: test.beforeAll
+            - text: and
+            - code [ref=e901]: test.afterAll
+            - text: which are executed once per worker before/after all tests.
+          - generic [ref=e902]:
+            - generic [ref=e903]: tests/example.spec.ts
+            - generic [ref=e904]:
+              - code [ref=e906]:
+                - generic [ref=e907]: "import { test, expect } from '@playwright/test';"
+                - generic [ref=e909]: "test.describe('navigation', () => {"
+                - generic [ref=e910]: "test.beforeEach(async ({ page }) => {"
+                - generic [ref=e911]: // Go to the starting url before each test.
+                - generic [ref=e912]: await page.goto('https://playwright.dev/');
+                - generic [ref=e913]: "});"
+                - generic [ref=e915]: "test('main navigation', async ({ page }) => {"
+                - generic [ref=e916]: // Assertions use the expect API.
+                - generic [ref=e917]: await expect(page).toHaveURL('https://playwright.dev/');
+                - generic [ref=e918]: "});"
+                - generic [ref=e919]: "});"
+              - button "Copy code to clipboard" [ref=e921] [cursor=pointer]:
+                - generic [ref=e922]:
+                  - img [ref=e923]
+                  - img [ref=e925]
+          - heading "What's NextDirect link to What's Next" [level=2] [ref=e927]:
+            - text: What's Next
+            - link "Direct link to What's Next" [ref=e928] [cursor=pointer]:
+              - /url: "#whats-next"
+              - text: "#"
+          - list [ref=e929]:
+            - listitem [ref=e930]:
+              - link "Run single test, multiple tests, headed mode" [ref=e931] [cursor=pointer]:
+                - /url: /docs/running-tests
+            - listitem [ref=e932]:
+              - link "Generate tests with Codegen" [ref=e933] [cursor=pointer]:
+                - /url: /docs/codegen-intro
+            - listitem [ref=e934]:
+              - link "See a trace of your tests" [ref=e935] [cursor=pointer]:
+                - /url: /docs/trace-viewer-intro
+            - listitem [ref=e936]:
+              - link "Explore UI Mode" [ref=e937] [cursor=pointer]:
+                - /url: /docs/test-ui-mode
+            - listitem [ref=e938]:
+              - link "Run tests on CI with GitHub Actions" [ref=e939] [cursor=pointer]:
+                - /url: /docs/ci-intro
+      - navigation "Docs pages" [ref=e940]:
+        - link "Previous « Installation" [ref=e941] [cursor=pointer]:
+          - /url: /docs/intro
+          - generic [ref=e942]: Previous
+          - generic [ref=e943]: « Installation
+        - link "Next Generating tests »" [ref=e944] [cursor=pointer]:
+          - /url: /docs/codegen-intro
+          - generic [ref=e945]: Next
+          - generic [ref=e946]: Generating tests »
+    - list [ref=e949]:
+      - listitem [ref=e950]:
+        - link "Introduction" [ref=e951] [cursor=pointer]:
+          - /url: "#introduction"
+      - listitem [ref=e952]:
+        - link "First test" [ref=e953] [cursor=pointer]:
+          - /url: "#first-test"
+      - listitem [ref=e954]:
+        - link "Actions" [ref=e955] [cursor=pointer]:
+          - /url: "#actions"
+        - list [ref=e956]:
+          - listitem [ref=e957]:
+            - link "Navigation" [ref=e958] [cursor=pointer]:
+              - /url: "#navigation"
+          - listitem [ref=e959]:
+            - link "Interactions" [ref=e960] [cursor=pointer]:
+              - /url: "#interactions"
+          - listitem [ref=e961]:
+            - link "Basic actions" [ref=e962] [cursor=pointer]:
+              - /url: "#basic-actions"
+      - listitem [ref=e963]:
+        - link "Assertions" [ref=e964] [cursor=pointer]:
+          - /url: "#assertions"
+        - list [ref=e965]:
+          - listitem [ref=e966]:
+            - link "Test Isolation" [ref=e967] [cursor=pointer]:
+              - /url: "#test-isolation"
+          - listitem [ref=e968]:
+            - link "Using Test Hooks" [ref=e969] [cursor=pointer]:
+              - /url: "#using-test-hooks"
+      - listitem [ref=e970]:
+        - link "What's Next" [ref=e971] [cursor=pointer]:
+          - /url: "#whats-next"
+```

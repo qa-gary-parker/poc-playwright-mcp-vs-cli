@@ -1,0 +1,49 @@
+### Ran Playwright code
+```js
+await page.goto('https://the-internet.herokuapp.com/login');
+```
+### Page
+- Page URL: https://the-internet.herokuapp.com/login
+- Page Title: The Internet
+- Console: 1 errors, 0 warnings
+### Snapshot
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - 'link "The Internet: home" [ref=e3] [cursor=pointer]':
+    - /url: /
+    - text: The Internet powered by Sauce Labs
+  - region "Messages" [ref=e5]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - heading "Login Page" [level=2] [ref=e9]
+      - heading "This is where you can log into the secure area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages." [level=4] [ref=e10]:
+        - text: This is where you can log into the secure area. Enter
+        - emphasis [ref=e11]: tomsmith
+        - text: for the username and
+        - emphasis [ref=e12]: SuperSecretPassword!
+        - text: for the password. If the information is wrong you should see error messages.
+      - generic [ref=e13]:
+        - generic [ref=e15]:
+          - generic [ref=e16] [cursor=pointer]: Username
+          - textbox "Username" [ref=e17]
+        - generic [ref=e19]:
+          - generic [ref=e20] [cursor=pointer]: Password
+          - textbox "Password" [ref=e21]
+        - button " Login" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]:  Login
+  - contentinfo [ref=e24]:
+    - generic [ref=e26]:
+      - text: Powered by
+      - link "Elemental Selenium" [ref=e27] [cursor=pointer]:
+        - /url: https://elementalselenium.com/
+      - text: and
+      - link "Sauce Labs" [ref=e28] [cursor=pointer]:
+        - /url: https://saucelabs.com/
+```
+### Events
+- New console entries: results/raw/MCP 0.0.68/files/console-2026-11-15T11-09-31-982Z.log#L1
+- [ERROR] Failed to load resource: net::ERR_NAME_NOT...932&wxhr=true&t=1794740973110&f=298349752,318188263:0
+- [INFO] Slow network is detected. See https://www.c...v=4.3.0 @ https://the-internet.herokuapp.com/login:66
+- [VERBOSE] [DOM] Input elements should have autocom...2vKq) %o @ https://the-internet.herokuapp.com/login:0

@@ -1,0 +1,146 @@
+[
+  {
+    "version": "0.0.41",
+    "tools": 21,
+    "toolChars": 12516,
+    "navigateChars": 1989,
+    "find": false,
+    "inlineSnapshot": true,
+    "fileLink": false
+  },
+  {
+    "version": "0.0.56",
+    "tools": 22,
+    "toolChars": 13655,
+    "navigateChars": 1979,
+    "find": false,
+    "inlineSnapshot": true,
+    "fileLink": false
+  },
+  {
+    "version": "0.0.64",
+    "tools": 22,
+    "toolChars": 14080,
+    "navigateChars": 2121,
+    "find": false,
+    "inlineSnapshot": true,
+    "fileLink": false
+  },
+  {
+    "version": "0.0.67",
+    "tools": 22,
+    "toolChars": 14080,
+    "navigateChars": 2121,
+    "find": false,
+    "inlineSnapshot": true,
+    "fileLink": false
+  },
+  {
+    "version": "0.0.68",
+    "tools": 22,
+    "toolChars": 14080,
+    "navigateChars": 2121,
+    "find": false,
+    "inlineSnapshot": true,
+    "fileLink": false
+  },
+  {
+    "version": "0.0.69",
+    "tools": 21,
+    "toolChars": 14676,
+    "navigateChars": 385,
+    "find": false,
+    "inlineSnapshot": false,
+    "fileLink": true
+  },
+  {
+    "version": "0.0.70",
+    "tools": 21,
+    "toolChars": 14676,
+    "navigateChars": 385,
+    "find": false,
+    "inlineSnapshot": false,
+    "fileLink": true
+  },
+  {
+    "version": "0.0.76",
+    "tools": 23,
+    "toolChars": 17084,
+    "navigateChars": 385,
+    "find": false,
+    "inlineSnapshot": false,
+    "fileLink": true
+  },
+  {
+    "version": "0.0.77",
+    "tools": 23,
+    "toolChars": 17418,
+    "navigateChars": 385,
+    "find": false,
+    "inlineSnapshot": false,
+    "fileLink": true
+  },
+  {
+    "version": "0.0.78",
+    "tools": 24,
+    "toolChars": 18466,
+    "navigateChars": 385,
+    "find": true,
+    "inlineSnapshot": false,
+    "fileLink": true
+  },
+  {
+    "version": "0.0.79",
+    "tools": 24,
+    "toolChars": 18502,
+    "navigateChars": 385,
+    "find": true,
+    "inlineSnapshot": false,
+    "fileLink": true
+  },
+  {
+    "version": "0.0.80",
+    "tools": 24,
+    "toolChars": 18502,
+    "navigateChars": 385,
+    "find": true,
+    "inlineSnapshot": false,
+    "fileLink": true
+  },
+  {
+    "version": "0.0.81",
+    "tools": 26,
+    "toolChars": 20050,
+    "navigateChars": 385,
+    "find": true,
+    "inlineSnapshot": false,
+    "fileLink": true
+  },
+  {
+    "version": "0.0.83",
+    "tools": 25,
+    "toolChars": 20286,
+    "navigateChars": 385,
+    "find": true,
+    "inlineSnapshot": false,
+    "fileLink": true
+  },
+  {
+    "version": "0.0.84",
+    "tools": 25,
+    "toolChars": 21060,
+    "navigateChars": 385,
+    "find": true,
+    "inlineSnapshot": false,
+    "fileLink": true
+  },
+  {
+    "version": "0.0.85",
+    "tools": 25,
+    "toolChars": 21177,
+    "navigateChars": 385,
+    "find": true,
+    "inlineSnapshot": false,
+    "fileLink": true
+  }
+]

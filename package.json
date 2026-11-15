@@ -1,0 +1,16 @@
+{
+  "name": "poc-playwright-mcp-vs-cli",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "experiment": "node scripts/run.mjs",
+    "bisect": "node scripts/bisect.mjs"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@playwright/cli": "0.1.24",
+    "@playwright/mcp": "0.0.85",
+    "gpt-tokenizer": "4.1.2",
+    "mcp-inline": "npm:@playwright/mcp@0.0.68"
+  }
+}

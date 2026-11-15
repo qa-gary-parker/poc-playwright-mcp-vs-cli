@@ -1,0 +1,9 @@
+### Ran Playwright code
+```js
+await page.getByRole('link', { name: 'Next Writing tests »' }).click();
+```
+### Page
+- Page URL: https://playwright.dev/docs/writing-tests
+- Page Title: Writing tests | Playwright
+### Snapshot
+- [Snapshot](.playwright-cli/page-2026-11-15T11-09-53-651Z.yml)

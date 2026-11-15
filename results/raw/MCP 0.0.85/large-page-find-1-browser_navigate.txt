@@ -1,0 +1,12 @@
+### Ran Playwright code
+```js
+await page.goto('https://the-internet.herokuapp.com/large');
+```
+### Page
+- Page URL: https://the-internet.herokuapp.com/large
+- Page Title: The Internet
+- Console: 5 errors, 0 warnings
+### Snapshot
+- [Snapshot](results/raw/MCP 0.0.85/files/page-2026-11-15T11-09-45-615Z.yml)
+### Events
+- New console entries: results/raw/MCP 0.0.85/files/console-2026-11-15T11-09-44-933Z.log#L1-L5
