@@ -6,6 +6,7 @@
 
 > Exploratory PoC, throwaway by default. Written up in
 > [Playwright MCP vs CLI: Token Cost per Step Is Now the Same](https://garyparker.dev/blog/playwright-mcp-vs-cli-tokens).
+> Eight-minute video: [youtu.be/f1L351xCbJ4](https://youtu.be/f1L351xCbJ4).
 
 ## Method
 
@@ -75,5 +76,7 @@ npm install
 npm run experiment
 npm run bisect -- 0.0.68 0.0.69 0.0.77 0.0.78 0.0.85
 ```
+
+The video is recorded from `video/`: `npm install && npm run record` there replays the saved responses on `stage.html` and adds the narration (needs a local `~/bin/tts`).
 
 MIT. Independent experiment; no affiliation with the Playwright team.

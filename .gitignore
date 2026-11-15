@@ -2,3 +2,4 @@ node_modules/
 .playwright-cli/
 .playwright-mcp/
 results/raw/*/files/
+video/out/

@@ -1,0 +1,10 @@
+{
+  "name": "poc-playwright-mcp-vs-cli-video",
+  "private": true,
+  "scripts": {
+    "record": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1"
+  }
+}
